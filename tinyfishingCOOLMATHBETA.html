@@ -1,0 +1,140 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/gamesnacks.js&quot;&gt;&lt;\/script&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+&lt;meta http-equiv=&quot;pragma&quot; content=&quot;no-cache&quot; /&gt;
+&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot; /&gt;
+&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black-translucent&quot; /&gt;
+&lt;meta charset=&quot;utf-8&quot; /&gt;
+
+&lt;title&gt;Tiny Fishing 1&lt;/title&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-MENBM6GSNY&quot;&gt;&lt;\/script&gt;&lt;script&gt;function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag(&quot;js&quot;,new Date),gtag(&quot;config&quot;,&quot;G-MENBM6GSNY&quot;)&lt;\/script&gt;
+&lt;style&gt;
+            body {
+              background: #0;
+              color:#cccccc;
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            canvas {
+                      image-rendering: optimizeSpeed;
+                      -webkit-interpolation-mode: nearest-neighbor;
+                      -ms-touch-action: none;
+                      margin: 0px;
+                      padding: 0px;
+                      border: 0px;
+            }
+            :-webkit-full-screen #canvas {
+                 width: 100%;
+                 height: 100%;
+            }
+            invisible_button
+            {
+              background-color:   rgba(1, 1, 1, 1);
+              background-repeat:  no-repeat;
+              border:             none;
+              cursor:             disabled;
+              overflow:           hidden;
+              outline:            none;
+              bottom:             0;
+              left:               0;
+              position:           absolute;
+              width:              100px;
+              height:             100px;
+              top:                0px;
+              left:               0px;
+              pointer-events:     none;
+              filter:             alpha(opacity=0);
+              -mos-opacity:       0.0;
+              opacity:            0.0;
+              display:            block;
+              z-index:            2;   
+              -moz-user-select:   -moz-none;
+              -khtml-user-select: none;
+              -webkit-user-select:none;
+               /*
+                 Introduced in IE 10.
+                 See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+               */
+              -ms-user-select:    none;
+              user-select:        none;
+            }
+            div.gm4html5_div_class
+            {
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            /* START - Login Dialog Box */
+            div.gm4html5_login
+            {
+                 padding: 20px;
+                 position: absolute;
+                 border: solid 2px #000000;
+                 background-color: #404040;
+                 color:#00ff00;
+                 border-radius: 15px;
+                 box-shadow: #101010 20px 20px 40px;
+            }
+            div.gm4html5_cancel_button
+            {
+                 float: right;
+            }
+            div.gm4html5_login_button
+            {
+                 float: left;
+            }
+            div.gm4html5_login_header
+            {
+                 text-align: center;
+            }
+            /* END - Login Dialog Box */
+            :-webkit-full-screen {
+               width: 100%;
+               height: 100%;
+            }
+
+            #sbar1 {
+              border-radius: 25px;
+              background: #73AD21;
+              padding: 20px;
+              width: 200px;
+              height: 150px;
+            }
+        &lt;/style&gt;
+&lt;script&gt;
+          if(!Number.isNaN &amp;&amp; window.isNaN) Number.isNaN = isNaN;
+          //if (typeof Math.sign ===&#39;undefined&#39;) { Math.sign = function (x) { return x &gt; 0 ? 1 : x &lt; 0 ? -1 : x; } }
+        &lt;\/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+
+ &lt;img src=&quot;https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/html5game/bg.png&quot; id=&quot;img_loadingbg&quot; alt=&quot;&quot; style=&quot;position:absolute; left : 0; top : 0; width:1px; height:1px;&quot; /&gt;
+&lt;img src=&quot;https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/html5game/caption.png&quot; id=&quot;img_loadingicon&quot; alt=&quot;&quot; style=&quot;position:absolute; left : 0; top : 0; width:1px; height:1px;&quot; /&gt;
+&lt;img src=&quot;https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/html5game/bh5logo.png&quot; id=&quot;img_loadinglogoicon&quot; alt=&quot;&quot; style=&quot;position:absolute; left : 0; top : 0; width:1px; height:1px;&quot; /&gt;
+&lt;div id=&quot;img_loadingbar&quot; style=&quot;border-radius: 25px; width:1px;height:1px; position:absolute; left : 0px; top : 0; background-color:#d7e0ee&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;img_loadingbaroverlay&quot; style=&quot;border-radius: 25px; width:1px;height:1px; position:absolute; left : 0px; top : 0; background-color:#f8703a&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;gm4html5_div_class&quot; id=&quot;gm4html5_div_id&quot;&gt;
+&lt;canvas id=&quot;canvas&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;
+&lt;p&gt;Your browser doesn&#39;t support HTML5 canvas.&lt;/p&gt;
+&lt;/canvas&gt;
+&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/html5game/TinyFishing.js&quot;&gt;&lt;\/script&gt;
+&lt;script&gt;
+          //window.onload = GameMaker_Init;
+        //if(!Number.isNaN &amp;&amp; window.isNaN) Number.isNaN = isNaN;
+
+          window.onload = function() {
+             if(!window.AudioContext &amp;&amp; !window.webkitAudioContext) g_WebAudioContext = {};
+             GameMaker_Init();
+             if(!window.AudioContext &amp;&amp; !window.webkitAudioContext) g_WebAudioContext = null;
+          };
+        &lt;\/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
