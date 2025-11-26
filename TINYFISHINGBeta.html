@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/gamesnacks.js"></script>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta charset="utf-8">
+
+  <title>Tiny Fishing 1</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MENBM6GSNY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-MENBM6GSNY");
+  </script>
+
+  <style>
+    body {
+      background: #000;
+      color: #cccccc;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    canvas {
+      image-rendering: optimizeSpeed;
+      -webkit-interpolation-mode: nearest-neighbor;
+      -ms-touch-action: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    div.gm4html5_div_class {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+  </style>
+
+  <script>
+    if (!Number.isNaN && window.isNaN) Number.isNaN = isNaN;
+  </script>
+</head>
+
+<body>
+
+  <img src="https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/html5game/bg.png" id="img_loadingbg" style="position:absolute;left:0;top:0;width:1px;height:1px;" />
+  <img src="https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/html5game/caption.png" id="img_loadingicon" style="position:absolute;left:0;top:0;width:1px;height:1px;" />
+  <img src="https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/html5game/bh5logo.png" id="img_loadinglogoicon" style="position:absolute;left:0;top:0;width:1px;height:1px;" />
+
+  <div id="img_loadingbar" style="border-radius:25px;position:absolute;left:0;top:0;width:1px;height:1px;background-color:#d7e0ee;"></div>
+  <div id="img_loadingbaroverlay" style="border-radius:25px;position:absolute;left:0;top:0;width:1px;height:1px;background-color:#f8703a;"></div>
+
+  <div class="gm4html5_div_class" id="gm4html5_div_id">
+    <canvas id="canvas" width="1" height="1">
+      <p>Your browser doesn't support HTML5 canvas.</p>
+    </canvas>
+  </div>
+
+  <script type="text/javascript" src="https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/html5game/TinyFishing.js"></script>
+
+  <script>
+    window.onload = function() {
+      if (!window.AudioContext && !window.webkitAudioContext) g_WebAudioContext = {};
+      GameMaker_Init();
+      if (!window.AudioContext && !window.webkitAudioContext) g_WebAudioContext = null;
+    };
+  </script>
+
+</body>
+</html>
